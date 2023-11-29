@@ -1,0 +1,44 @@
+lombok
+1. 의존설정
+2. 사용 	
+	@Getter : - getter 패턴 자동 생성 
+	@Setter : - setter 패턴을 자동 생성
+	@ToString : - toString 패턴을 자동 생성 
+			Exclude - ToString 배제할 항목 
+	@NoArgsConstructor : 기본 생성자(매개변수 X)
+		- 기본값 public
+		
+	@AllArgsConstructor : 모든 매개변수를 초기화하는 생성자 패턴 
+	@RequiredArgsConstructor : 초기화가 반드시 필요한 멤버 변수를 매개변수로 하는 생성자
+											1) 멤버 변수가 상수(final)일때 -> 반드시 초기화
+											2) @NonNull이 붙어 있는 멤버 변수
+											
+	@EqualsAndHashCode : equals, hashcode 메서드 자동 생성
+	
+	@Data : @Getter + @Setter + @ToString + @EqualsAndHashCode
+	
+	@Log : log 멤버 변수 자동 추가 
+					trace(), debug() .info(), warn() ...
+	
+	@Builder : builder 패턴 자동 완성 
+	
+	참고)
+		builder 패턴
+			- 객체 생성을 직접 X, 
+				- 기본 생성자가 private
+				
+			- setter를 대신 할수 있는 대안적인 패턴
+				- 1) 정적 내부 클래스인 Builder 
+						- 객체를 생성
+						- 멤버 변수 초기화(메서드 체이닝)
+						- 멤버 변수명과 동일한 메서드명(setter를 대신)
+						
+				- 2) build()를 통해서 생성된 객체 반환 
+	
+버전 표기법 
+	1.          18.          28
+	메이저    마이너    패치
+	
+	패치 - 오류, 기능 개선 
+	마이너 - 하위 버전에 호환성에 문제가 없는 기능추가, 변경
+	메이저 - 하위 버전에 호환이 안되는 큰 변화
