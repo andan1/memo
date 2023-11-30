@@ -1,0 +1,46 @@
+개발환경 구축
+src/main/webapp
+		- HTML, JS, CSS, JSP 
+src/main/webapp/WEB-INF
+								- web.xml : 애플케이션 배치 설명자 파일
+													- 서블릿, 필더 등등 배치에 대한 설정
+								- lib : 자바 라이브러리 jar
+								- classes : 컴파일된 class
+
+메이븐 프로젝트 
+	classes -> target
+	lib -> src/main/resources
+
+gradle 프로젝트 
+	classes -> build
+	lib -> src/main/resources
+
+웹 기초
+1. 요청과 응답 이해하기
+	요청(request)
+	응답(response) 
+
+	요청 전문 
+		헤더(header) 		
+		바디(body)
+	
+			
+		
+	응답 전문
+		헤더(header)
+		바디(body)
+			
+2. HTTP ( HyperText Transfer Protocol)
+3. 헤더(header)
+4. HTTP 상태 코드
+5. HTTP 요청 메서드
+
+
+
+서블릿(Servlet)
+1. 서블릿(Servlet)의 개요
+2. 서블릿(Servlet) 클래스 작성하기
+3. web.xml 파일에 서블릿(Servlet) 등록하기
+4. XML 문법의 기초
+5. 웹 브라우저로부터 데이터 입력 받기
+6. init메서드와  destroy 메서드
